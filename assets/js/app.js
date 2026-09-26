@@ -80,6 +80,10 @@
   const status = byId('offline-status');
   const retry = byId('cache-retry');
   const update = byId('update-app');
+  const readyWithTimeout = () => {
+    let timer;
+    return Promise.race([navigator.serviceWorker.ready, new Promise((_, reject) => { timer = setTimeout(() => reject(new Error('Service worker activation timed out')), 60000); })]).finally(() => clearTimeout(timer));
+  };
   let registration;
   let offlineReady = false;
   const showStatus = () => { if (status) status.textContent = offlineReady ? (navigator.onLine ? '全套 21 篇文章已可離線閱讀。' : '目前離線 · 全套 21 篇文章仍可閱讀。') : (navigator.onLine ? '正在準備離線文章，請保持連線…' : '目前離線；恢復連線後可儲存完整課程。'); };
@@ -109,12 +113,12 @@
           if (installing.state === 'redundant' && !registration.active) { if (status) status.textContent = '離線儲存未完成，請確認連線後重試。'; if (retry) retry.hidden = false; }
         });
       });
-      return navigator.serviceWorker.ready;
+      return readyWithTimeout();
     }).then(reg => { registration = reg; return checkReady(); }).catch(() => { if (status) status.textContent = '離線儲存未完成，仍可線上閱讀。請確認連線後重試。'; if (retry) retry.hidden = false; });
     retry?.addEventListener('click', async () => {
       retry.disabled = true;
       if (status) status.textContent = '正在重新儲存全套文章…';
-      try { registration = registration || await navigator.serviceWorker.register(base + '/sw.js', {scope:base + '/', updateViaCache:'none'}); if (!registration.active) { await registration.update(); registration = await navigator.serviceWorker.ready; } await message(registration.active, 'CACHE_ALL'); await checkReady(); } catch (_) { if (status) status.textContent = '儲存未完成，請檢查網路或裝置可用空間後再試。'; retry.hidden = false; } finally { retry.disabled = false; }
+      try { registration = registration || await navigator.serviceWorker.register(base + '/sw.js', {scope:base + '/', updateViaCache:'none'}); if (!registration.active) { await registration.update(); registration = await readyWithTimeout(); } await message(registration.active, 'CACHE_ALL'); await checkReady(); } catch (_) { if (status) status.textContent = '儲存未完成，請檢查網路或裝置可用空間後再試。'; retry.hidden = false; } finally { retry.disabled = false; }
     });
     window.addEventListener('online', () => { showStatus(); if (registration?.active) checkReady().catch(() => {}); });
   } else if (status) status.textContent = '此瀏覽環境暫不支援離線儲存；文章仍可線上閱讀。';

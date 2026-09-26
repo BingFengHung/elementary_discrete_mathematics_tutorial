@@ -35,6 +35,7 @@ try{
   await page.locator('[data-card-day="1"]').click();
   await page.waitForSelector('#lesson-content');
   assert.equal(await page.locator('h1').textContent(),'玩具怎麼分？認識集合');
+  assert.equal(await page.locator('.prose > blockquote p').count(),2,'Task and materials should be separate paragraphs');
   assert.equal(await page.locator('.answers').getAttribute('open'),null);
   await page.locator('.answers summary').click();
   assert.equal(await page.locator('.answers ol li').count(),3);
