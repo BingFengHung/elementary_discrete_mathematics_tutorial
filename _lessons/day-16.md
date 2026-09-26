@@ -33,6 +33,32 @@ description: "先決定比較的標準，再計算路線總長。"
 
 ## 把沿路的數字加起來
 
+
+<div class="concept-figure" aria-label="圖解：最短路徑問題 — 把路徑邊上的數字相加，段數多的路徑（3段）有時反而比數字大的路徑（2段）更省時。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="270" y="38" font-size="14" font-weight="bold" fill="var(--brand)" text-anchor="middle">尋找從 A 到 D 的最短路線</text>
+  <line x1="75" y1="105" x2="215" y2="65" stroke="var(--line)" stroke-width="2"/>
+  <line x1="215" y1="65" x2="455" y2="105" stroke="var(--line)" stroke-width="2"/>
+  <line x1="75" y1="105" x2="215" y2="145" stroke="#10b981" stroke-width="3"/>
+  <line x1="215" y1="145" x2="455" y2="105" stroke="#10b981" stroke-width="3"/>
+  <circle cx="75" cy="105" r="18" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="75" y="110" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">A</text>
+  <circle cx="215" cy="65" r="18" fill="var(--surface)" stroke="var(--line)" stroke-width="2"/>
+  <text x="215" y="70" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">B</text>
+  <circle cx="215" cy="145" r="18" fill="#10b98120" stroke="#10b981" stroke-width="2"/>
+  <text x="215" y="150" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">C</text>
+  <circle cx="455" cy="105" r="18" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="455" y="110" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">D</text>
+  <text x="145" y="75" font-size="12" fill="var(--muted)">4 分</text>
+  <text x="345" y="75" font-size="12" fill="var(--muted)">5 分</text>
+  <text x="145" y="145" font-size="12" font-weight="bold" fill="#10b981">2 分</text>
+  <text x="345" y="145" font-size="12" font-weight="bold" fill="#10b981">3 分</text>
+  <text x="270" y="180" font-size="13" font-weight="bold" fill="#10b981" text-anchor="middle">路線 A➔B➔D 需 9 分鐘 ； 路線 A➔C➔D 只要 2＋3＝5 分鐘 (勝！)</text>
+</svg>
+<p class="figure-caption">圖解：最短路徑問題 — 把路徑邊上的數字相加，段數多的路徑（3段）有時反而比數字大的路徑（2段）更省時。</p>
+</div>
+
 小安走 A—B—E，經過兩條邊，總長是 6＋6＝12 步。
 
 小米走 A—C—D—E，經過三條邊，總長是 3＋3＋3＝9 步。

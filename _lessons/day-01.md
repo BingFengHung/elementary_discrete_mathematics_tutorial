@@ -25,6 +25,33 @@ description: "說清楚分類規則，判斷一件東西應該放在哪一群。
 
 ## 先訂規則，再找成員
 
+
+<div class="concept-figure" aria-label="圖解：只有符合「紅色」條件的 1、4、5 號玩具，才屬於紅色集合圈圈內。">
+<svg viewBox="0 0 540 220" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="520" height="200" rx="16" fill="var(--surface)" stroke="var(--line)" stroke-width="2"/>
+  <text x="30" y="38" font-size="13" font-weight="bold" fill="var(--muted)">所有 6 件玩具的調查範圍</text>
+  <ellipse cx="200" cy="120" rx="160" ry="75" fill="#ef444415" stroke="#ef4444" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="200" y="68" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">紅色玩具集合</text>
+  <rect x="75" y="95" width="70" height="50" rx="8" fill="var(--surface)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="110" y="117" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">1 號</text>
+  <text x="110" y="134" font-size="11" fill="var(--muted)" text-anchor="middle">汽車(紅)</text>
+  <rect x="165" y="95" width="70" height="50" rx="8" fill="var(--surface)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="200" y="117" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">4 號</text>
+  <text x="200" y="134" font-size="11" fill="var(--muted)" text-anchor="middle">積木(紅)</text>
+  <rect x="255" y="95" width="70" height="50" rx="8" fill="var(--surface)" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="290" y="117" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">5 號</text>
+  <text x="290" y="134" font-size="11" fill="var(--muted)" text-anchor="middle">球(紅)</text>
+  <text x="440" y="68" font-size="13" font-weight="bold" fill="var(--muted)" text-anchor="middle">不屬於集合</text>
+  <rect x="395" y="80" width="90" height="35" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+  <text x="440" y="102" font-size="11" fill="var(--muted)" text-anchor="middle">2 號 積木(藍)</text>
+  <rect x="395" y="122" width="90" height="35" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+  <text x="440" y="144" font-size="11" fill="var(--muted)" text-anchor="middle">3 號 小熊(黃)</text>
+  <rect x="395" y="164" width="90" height="35" rx="6" fill="var(--line)" stroke="var(--line)" stroke-width="1.2"/>
+  <text x="440" y="186" font-size="11" fill="var(--muted)" text-anchor="middle">6 號 汽車(藍)</text>
+</svg>
+<p class="figure-caption">圖解：只有符合「紅色」條件的 1、4、5 號玩具，才屬於紅色集合圈圈內。</p>
+</div>
+
 假設桌上有這六件東西：
 
 | 編號 | 物品 | 顏色 |

@@ -21,6 +21,34 @@ description: "用點表示地點、用線表示連接，讀懂簡化地圖。"
 
 ## 點代表地方，線代表能直接走到
 
+
+<div class="concept-figure" aria-label="圖解：圖論核心 — 忽略彎曲距離與外觀，只提煉出「地點（頂點）」與「連通關係（邊）」。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="240" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="135" y="42" font-size="13" font-weight="bold" fill="var(--muted)" text-anchor="middle">實際公園地圖（繁複地形）</text>
+  <rect x="40" y="65" width="70" height="35" rx="6" fill="#3b82f620" stroke="#3b82f6"/>
+  <text x="75" y="87" font-size="11" fill="var(--ink)" text-anchor="middle">溜滑梯</text>
+  <rect x="150" y="65" width="70" height="35" rx="6" fill="#10b98120" stroke="#10b981"/>
+  <text x="185" y="87" font-size="11" fill="var(--ink)" text-anchor="middle">涼亭</text>
+  <rect x="95" y="130" width="70" height="35" rx="6" fill="#f59e0b20" stroke="#f59e0b"/>
+  <text x="130" y="152" font-size="11" fill="var(--ink)" text-anchor="middle">噴泉廣場</text>
+  <text x="268" y="112" font-size="20" fill="var(--brand)">➔</text>
+  <rect x="285" y="15" width="240" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="405" y="42" font-size="13" font-weight="bold" fill="var(--brand)" text-anchor="middle">數學上的「圖」(Graph)</text>
+  <line x1="345" y1="80" x2="465" y2="80" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="345" y1="80" x2="405" y2="145" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="465" y1="80" x2="405" y2="145" stroke="var(--brand)" stroke-width="2"/>
+  <circle cx="345" cy="80" r="16" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="345" y="85" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">A</text>
+  <circle cx="465" cy="80" r="16" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="465" y="85" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">B</text>
+  <circle cx="405" cy="145" r="16" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="405" y="150" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">C</text>
+  <text x="405" y="180" font-size="11" fill="var(--muted)" text-anchor="middle">頂點 (地點) ＋ 邊 (能通行的路)</text>
+</svg>
+<p class="figure-caption">圖解：圖論核心 — 忽略彎曲距離與外觀，只提煉出「地點（頂點）」與「連通關係（邊）」。</p>
+</div>
+
 把五張卡放在紙上，依照下表連線：
 
 | 道路 | 表示的連接 |

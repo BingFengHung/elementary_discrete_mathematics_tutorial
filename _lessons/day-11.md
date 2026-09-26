@@ -51,6 +51,25 @@ description: "辨認順序是否重要，避免把同一組成員重複計數。
 
 ## 為什麼有時會除以二？
 
+
+<div class="concept-figure" aria-label="圖解：組隊不在意前後順序；把重複計算的相同搭檔合併，就要除以 2。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="137" y="42" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">【排隊有順序】算 2 種</text>
+  <rect x="40" y="65" width="195" height="42" rx="6" fill="#ef444415" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="137" y="91" font-size="13" fill="var(--ink)" text-anchor="middle">小安 先，小米 後 (AB)</text>
+  <rect x="40" y="118" width="195" height="42" rx="6" fill="#ef444415" stroke="#ef4444" stroke-width="1.2"/>
+  <text x="137" y="144" font-size="13" fill="var(--ink)" text-anchor="middle">小米 先，小安 後 (BA)</text>
+  <rect x="280" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="402" y="42" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">【組隊無順序】合為 1 組</text>
+  <rect x="305" y="65" width="195" height="75" rx="8" fill="#10b98120" stroke="#10b981" stroke-width="1.8"/>
+  <text x="402" y="95" font-size="14" font-weight="bold" fill="var(--ink)" text-anchor="middle">{ 小安, 小米 }</text>
+  <text x="402" y="118" font-size="11" fill="var(--muted)" text-anchor="middle">誰前誰後都是同一組值日生！</text>
+  <text x="402" y="165" font-size="12" font-weight="bold" fill="#10b981" text-anchor="middle">總數計算：6 ÷ 2 ＝ 3 組</text>
+</svg>
+<p class="figure-caption">圖解：組隊不在意前後順序；把重複計算的相同搭檔合併，就要除以 2。</p>
+</div>
+
 如果先選第一個人，再選第二個人，四人會有 4×3＝12 種有先後的選法。
 
 但今天不計先後，所以每一組都恰好被記了兩次。例如安晴和晴安，其實是同一組；米樂和樂米也是同一組。

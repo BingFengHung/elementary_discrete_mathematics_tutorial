@@ -27,6 +27,25 @@ description: "分辨可以判斷真假的敘述、問題和命令。"
 
 ## 有些句子是在說一件事
 
+
+<div class="concept-figure" aria-label="圖解：命題判斷法則 — 只要能明確判斷真假，假話也是命題；疑問與主觀感受則不是。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="170" y="15" width="200" height="42" rx="10" fill="var(--surface)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="270" y="41" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">一句話能否明確判斷真假？</text>
+  <path d="M220 57 L130 95" stroke="var(--brand)" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M320 57 L410 95" stroke="var(--line)" stroke-width="2"/>
+  <rect x="30" y="95" width="200" height="95" rx="12" fill="#10b98115" stroke="#10b981" stroke-width="1.8"/>
+  <text x="130" y="120" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">是 → 屬於【命題】</text>
+  <text x="130" y="145" font-size="12" fill="var(--ink)" text-anchor="middle">「今天是星期二」（真的）</text>
+  <text x="130" y="168" font-size="12" fill="var(--ink)" text-anchor="middle">「貓有八隻腳」（假的，也是命題）</text>
+  <rect x="310" y="95" width="200" height="95" rx="12" fill="#ef444415" stroke="#ef4444" stroke-width="1.8"/>
+  <text x="410" y="120" font-size="14" font-weight="bold" fill="#ef4444" text-anchor="middle">否 → 【不是命題】</text>
+  <text x="410" y="145" font-size="12" fill="var(--ink)" text-anchor="middle">「你吃飽了嗎？」（疑問句）</text>
+  <text x="410" y="168" font-size="12" fill="var(--ink)" text-anchor="middle">「這顆蘋果很好吃」（主觀感受）</text>
+</svg>
+<p class="figure-caption">圖解：命題判斷法則 — 只要能明確判斷真假，假話也是命題；疑問與主觀感受則不是。</p>
+</div>
+
 「7 比 5 大」是在描述數字的大小。我們可以比較，判斷它是真的。
 
 「8 是奇數」也在描述一件事。把八顆積木兩顆一組，能剛好分成四組，所以 8 是偶數。這句話是假的。

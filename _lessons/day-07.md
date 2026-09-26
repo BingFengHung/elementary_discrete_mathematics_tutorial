@@ -30,6 +30,42 @@ description: "用集合和邏輯規則分配工作，並檢查自己的理由。
 
 ## 任務一：把資料畫成圈圈
 
+
+<div class="concept-figure" aria-label="圖解：第一週偵探推理技能地圖 — 精確分類、處理交集、邏輯條件與循序推論。">
+<svg viewBox="0 0 540 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="170" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <g transform="translate(30, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#3b82f615" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="52" y="32" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">工具 1</text>
+    <circle cx="52" cy="65" r="20" fill="none" stroke="#3b82f6" stroke-width="2"/>
+    <text x="52" y="105" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">集合分類</text>
+  </g>
+  <g transform="translate(155, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#10b98115" stroke="#10b981" stroke-width="1.5"/>
+    <text x="52" y="32" font-size="12" font-weight="bold" fill="#10b981" text-anchor="middle">工具 2</text>
+    <circle cx="42" cy="65" r="16" fill="#10b98130" stroke="#10b981" stroke-width="1.5"/>
+    <circle cx="62" cy="65" r="16" fill="#10b98130" stroke="#10b981" stroke-width="1.5"/>
+    <text x="52" y="105" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">文氏圖交集</text>
+  </g>
+  <g transform="translate(280, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#f59e0b15" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="52" y="32" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">工具 3</text>
+    <rect x="25" y="55" width="22" height="20" rx="4" fill="#f59e0b"/>
+    <text x="52" y="68" font-size="11" fill="var(--ink)">+</text>
+    <rect x="58" y="55" width="22" height="20" rx="4" fill="#f59e0b"/>
+    <text x="52" y="105" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">且與或閘門</text>
+  </g>
+  <g transform="translate(405, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#8b5cf615" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="52" y="32" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">工具 4</text>
+    <path d="M30 65 L75 65" stroke="#8b5cf6" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="52" y="105" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">條件推論</text>
+  </g>
+  <text x="270" y="172" font-size="12" fill="var(--muted)" text-anchor="middle">第一週四大推理工具準備完畢，出發解開綜合謎題！</text>
+</svg>
+<p class="figure-caption">圖解：第一週偵探推理技能地圖 — 精確分類、處理交集、邏輯條件與循序推論。</p>
+</div>
+
 左圈是「帶鉛筆」，右圈是「帶地圖」。請先自己在紙上畫兩個重疊的圈圈，再放進名字卡。
 
 只帶鉛筆、沒帶地圖的是小米和小禾，放左側。只有地圖、沒帶鉛筆的是阿樂，放右側。小安和小晴兩樣都有，放中間。小宇兩樣都沒有，放兩圈外。

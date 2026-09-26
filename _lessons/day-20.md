@@ -23,6 +23,29 @@ description: "分辨例子、反例和一般性的理由，學習說明為什麼
 
 ## 一個反例，就能推翻全部都成立
 
+
+<div class="concept-figure" aria-label="圖解：數學推理法則 — 嘗試多次只是猜想；一個反例即可推翻全稱；真正的證明需要講清楚每一步的必然性。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="137" y="42" font-size="13" font-weight="bold" fill="#10b981" text-anchor="middle">骨牌推倒原理（數學歸納）</text>
+  <rect x="45" y="70" width="12" height="45" rx="3" fill="#10b981" transform="rotate(15 45 70)"/>
+  <rect x="85" y="73" width="12" height="45" rx="3" fill="#10b981" transform="rotate(20 85 73)"/>
+  <rect x="125" y="76" width="12" height="45" rx="3" fill="#10b981" transform="rotate(25 125 76)"/>
+  <rect x="165" y="80" width="12" height="45" rx="3" fill="#10b981" transform="rotate(30 165 80)"/>
+  <text x="137" y="150" font-size="11" fill="var(--ink)" text-anchor="middle">第 1 塊會倒 ＋ 每塊倒必推下一塊</text>
+  <text x="137" y="170" font-size="11" font-weight="bold" fill="#10b981" text-anchor="middle">➔ 保證所有骨牌永遠全倒！</text>
+  <rect x="280" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="402" y="42" font-size="13" font-weight="bold" fill="#ef4444" text-anchor="middle">一個反例推翻猜想</text>
+  <rect x="310" y="85" width="14" height="45" rx="3" fill="#10b981" transform="rotate(25 310 85)"/>
+  <rect x="350" y="90" width="14" height="45" rx="3" fill="#10b981" transform="rotate(30 350 90)"/>
+  <rect x="420" y="85" width="14" height="45" rx="3" fill="#ef4444"/>
+  <text x="427" y="75" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">反例！</text>
+  <text x="402" y="150" font-size="11" fill="var(--ink)" text-anchor="middle">即使前面試了 100 次都成功，</text>
+  <text x="402" y="170" font-size="11" font-weight="bold" fill="#ef4444" text-anchor="middle">只要 1 個反例 ➔ 說法就破功！</text>
+</svg>
+<p class="figure-caption">圖解：數學推理法則 — 嘗試多次只是猜想；一個反例即可推翻全稱；真正的證明需要講清楚每一步的必然性。</p>
+</div>
+
 像 6 這樣，符合原句談的範圍，卻不符合它聲稱的結果，就叫作**反例**。
 
 原句說所有偶數都是 4 的倍數。6 確實是偶數，卻不是 4 的倍數，因此足以推翻原句。2 或 10 也可以。

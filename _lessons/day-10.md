@@ -42,6 +42,33 @@ description: "有順序地列出排隊方法，理解位置改變會產生不同
 
 ## 為什麼是三乘二乘一？
 
+
+<div class="concept-figure" aria-label="圖解：排隊的階乘原理 — 前面位置選定後，後面位置的候選人依序遞減。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="270" y="42" font-size="14" font-weight="bold" fill="var(--brand)" text-anchor="middle">三個人（小安、小米、阿樂）排成一列</text>
+  <g transform="translate(50, 60)">
+    <rect x="0" y="0" width="120" height="70" rx="10" fill="#3b82f615" stroke="var(--brand)" stroke-width="2"/>
+    <text x="60" y="28" font-size="13" font-weight="bold" fill="var(--brand)" text-anchor="middle">【第 1 位】</text>
+    <text x="60" y="52" font-size="12" fill="var(--ink)" text-anchor="middle">有 3 人可選</text>
+  </g>
+  <text x="195" y="102" font-size="22" font-weight="bold" fill="var(--muted)">×</text>
+  <g transform="translate(220, 60)">
+    <rect x="0" y="0" width="120" height="70" rx="10" fill="#10b98115" stroke="#10b981" stroke-width="2"/>
+    <text x="60" y="28" font-size="13" font-weight="bold" fill="#10b981" text-anchor="middle">【第 2 位】</text>
+    <text x="60" y="52" font-size="12" fill="var(--ink)" text-anchor="middle">剩 2 人可選</text>
+  </g>
+  <text x="365" y="102" font-size="22" font-weight="bold" fill="var(--muted)">×</text>
+  <g transform="translate(390, 60)">
+    <rect x="0" y="0" width="100" height="70" rx="10" fill="#f59e0b15" stroke="#f59e0b" stroke-width="2"/>
+    <text x="50" y="28" font-size="13" font-weight="bold" fill="#f59e0b" text-anchor="middle">【第 3 位】</text>
+    <text x="50" y="52" font-size="12" fill="var(--ink)" text-anchor="middle">剩 1 人就定位</text>
+  </g>
+  <text x="270" y="165" font-size="14" font-weight="bold" fill="var(--ink)" text-anchor="middle">全部排法：3 × 2 × 1 ＝ 6 種排列結果</text>
+</svg>
+<p class="figure-caption">圖解：排隊的階乘原理 — 前面位置選定後，後面位置的候選人依序遞減。</p>
+</div>
+
 第一個位置還沒有人，可以從三人選一位。選好之後，那個人不能同時占第二個位置，所以第二位只剩兩人可選。前兩位決定後，第三位就只剩最後一人。
 
 因此共有 3×2×1＝6 種。

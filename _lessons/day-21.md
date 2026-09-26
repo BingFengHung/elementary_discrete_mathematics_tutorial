@@ -21,6 +21,35 @@ description: "結合分類、計數、地圖和推理，完成一個別人能照
 
 ## 第一關：誰能加入探險隊？
 
+
+<div class="concept-figure" aria-label="圖解：21 天離散數學探險全景闖關地圖 — 掌握三大島嶼核心思維，設計屬於你的數學挑戰遊戲！">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <path d="M70 105 Q 160 50, 210 105 T 350 105 T 465 105" fill="none" stroke="var(--brand)" stroke-width="3" stroke-dasharray="6 4"/>
+  <g transform="translate(45, 75)">
+    <circle cx="25" cy="30" r="22" fill="#3b82f620" stroke="#3b82f6" stroke-width="2"/>
+    <text x="25" y="35" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">第 1 週</text>
+    <text x="25" y="65" font-size="10" fill="var(--muted)" text-anchor="middle">分類與邏輯島</text>
+  </g>
+  <g transform="translate(185, 75)">
+    <circle cx="25" cy="30" r="22" fill="#10b98120" stroke="#10b981" stroke-width="2"/>
+    <text x="25" y="35" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">第 2 週</text>
+    <text x="25" y="65" font-size="10" fill="var(--muted)" text-anchor="middle">計數排列森林</text>
+  </g>
+  <g transform="translate(325, 75)">
+    <circle cx="25" cy="30" r="22" fill="#f59e0b20" stroke="#f59e0b" stroke-width="2"/>
+    <text x="25" y="35" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">第 3 週</text>
+    <text x="25" y="65" font-size="10" fill="var(--muted)" text-anchor="middle">圖論演算法城</text>
+  </g>
+  <g transform="translate(445, 65)">
+    <polygon points="25,5 32,22 50,22 36,33 41,50 25,40 9,50 14,33 0,22 18,22" fill="#fbbf24" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="25" y="68" font-size="10" font-weight="bold" fill="#f59e0b" text-anchor="middle">終點勳章！</text>
+  </g>
+  <text x="270" y="175" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">恭喜完成 21 天探險！運用分類、計數與圖論，開啟更大的思考世界！</text>
+</svg>
+<p class="figure-caption">圖解：21 天離散數學探險全景闖關地圖 — 掌握三大島嶼核心思維，設計屬於你的數學挑戰遊戲！</p>
+</div>
+
 隊員資料如下，這一輪不交換物品：
 
 | 隊員 | 有地圖 | 有鉛筆 | 有帽子 |

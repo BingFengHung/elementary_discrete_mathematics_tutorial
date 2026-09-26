@@ -33,6 +33,36 @@ description: "用「物品比位置多」的道理，說明為什麼一定有重
 
 ## 這就是鴿籠原理
 
+
+<div class="concept-figure" aria-label="圖解：鴿籠原理 — 當物件數（4隻鴿子）多於容器數（3個鳥巢），必定有至少一個鳥巢住了兩隻以上。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="270" y="38" font-size="14" font-weight="bold" fill="var(--brand)" text-anchor="middle">4 隻鴿子飛進 3 個鳥巢</text>
+  <g transform="translate(60, 60)">
+    <rect x="0" y="0" width="115" height="85" rx="10" fill="var(--soft)" stroke="var(--line)" stroke-width="2"/>
+    <text x="57" y="25" font-size="12" font-weight="bold" fill="var(--muted)" text-anchor="middle">鳥巢 A</text>
+    <circle cx="57" cy="55" r="16" fill="#3b82f6"/>
+    <text x="57" y="60" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">鴿 1</text>
+  </g>
+  <g transform="translate(210, 60)">
+    <rect x="0" y="0" width="120" height="85" rx="10" fill="#ef444415" stroke="#ef4444" stroke-width="2.5"/>
+    <text x="60" y="25" font-size="12" font-weight="bold" fill="#ef4444" text-anchor="middle">鳥巢 B (擠在一起！)</text>
+    <circle cx="40" cy="55" r="16" fill="#3b82f6"/>
+    <text x="40" y="60" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">鴿 2</text>
+    <circle cx="80" cy="55" r="16" fill="#ef4444"/>
+    <text x="80" y="60" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">鴿 4</text>
+  </g>
+  <g transform="translate(365, 60)">
+    <rect x="0" y="0" width="115" height="85" rx="10" fill="var(--soft)" stroke="var(--line)" stroke-width="2"/>
+    <text x="57" y="25" font-size="12" font-weight="bold" fill="var(--muted)" text-anchor="middle">鳥巢 C</text>
+    <circle cx="57" cy="55" r="16" fill="#3b82f6"/>
+    <text x="57" y="60" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">鴿 3</text>
+  </g>
+  <text x="270" y="172" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">無論怎麼放，至少有一個鳥巢必須容納 2 隻或更多鴿子！</text>
+</svg>
+<p class="figure-caption">圖解：鴿籠原理 — 當物件數（4隻鴿子）多於容器數（3個鳥巢），必定有至少一個鳥巢住了兩隻以上。</p>
+</div>
+
 這個道理常被叫作**鴿籠原理**。名字裡的鴿子可以換成積木、學生、襪子；籠子或鳥巢則可以換成盒子、月份或顏色種類。
 
 只要物品的數量比可分配的位置或類別多，而且每件物品都必須歸到其中一類，就一定有某一類包含至少兩件。

@@ -33,6 +33,33 @@ description: "數每個點連著幾條線，判斷一筆畫的可能性。"
 
 ## 數出奇數連接點
 
+
+<div class="concept-figure" aria-label="圖解：一筆畫判斷法則 — 計算每個點連出的邊數，只有奇數點剛好是 0 個或 2 個時才能一筆畫畫完。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <line x1="80" y1="60" x2="200" y2="60" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="80" y1="140" x2="200" y2="140" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="80" y1="60" x2="80" y2="140" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="200" y1="60" x2="200" y2="140" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="80" y1="140" x2="200" y2="60" stroke="var(--brand)" stroke-width="2"/>
+  <circle cx="80" cy="60" r="14" fill="#3b82f620" stroke="#3b82f6" stroke-width="2"/>
+  <text x="80" y="64" font-size="10" font-weight="bold" fill="#3b82f6" text-anchor="middle">2 (偶)</text>
+  <circle cx="200" cy="60" r="14" fill="#ef444420" stroke="#ef4444" stroke-width="2"/>
+  <text x="200" y="64" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">3 (奇)</text>
+  <circle cx="80" cy="140" r="14" fill="#ef444420" stroke="#ef4444" stroke-width="2"/>
+  <text x="80" y="144" font-size="10" font-weight="bold" fill="#ef4444" text-anchor="middle">3 (奇)</text>
+  <circle cx="200" cy="140" r="14" fill="#3b82f620" stroke="#3b82f6" stroke-width="2"/>
+  <text x="200" y="144" font-size="10" font-weight="bold" fill="#3b82f6" text-anchor="middle">2 (偶)</text>
+  <g transform="translate(250, 45)">
+    <text x="0" y="25" font-size="14" font-weight="bold" fill="var(--brand)">歐拉一筆畫黃金定理：</text>
+    <text x="0" y="55" font-size="12" fill="var(--ink)">• 奇數點有 0 個 ➔ 可以一筆畫（起點等於終點）</text>
+    <text x="0" y="80" font-size="12" fill="#10b981" font-weight="bold">• 奇數點剛好 2 個 ➔ 可以一筆畫！（此圖成立）</text>
+    <text x="0" y="105" font-size="12" fill="#ef4444">• 奇數點多於 2 個 ➔ 絕對不可能一筆畫！</text>
+  </g>
+</svg>
+<p class="figure-caption">圖解：一筆畫判斷法則 — 計算每個點連出的邊數，只有奇數點剛好是 0 個或 2 個時才能一筆畫畫完。</p>
+</div>
+
 一個點連著的線數叫度數，昨天之前我們已經見過。今天沒有線從某點繞回自己，也沒有兩點之間重複畫多條線，所以直接數接到那個點的線就可以。
 
 三角形每個角都連著兩條線，三個點的度數全是 2，沒有奇數度數的點。

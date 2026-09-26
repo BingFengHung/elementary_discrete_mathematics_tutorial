@@ -33,6 +33,31 @@ description: "區分「選其中一樣」與「分步搭配」，知道加法何
 
 ## 換成套餐，問題就不同了
 
+
+<div class="concept-figure" aria-label="圖解：單選做決定用「加法」；分步驟組合搭配用「乘法」。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="137" y="42" font-size="14" font-weight="bold" fill="#3b82f6" text-anchor="middle">【加法原理】只能挑一樣</text>
+  <rect x="35" y="60" width="90" height="42" rx="6" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="80" y="85" font-size="12" fill="var(--ink)" text-anchor="middle">蛋糕 (3種)</text>
+  <text x="137" y="85" font-size="15" font-weight="bold" fill="var(--brand)" text-anchor="middle">或</text>
+  <rect x="155" y="60" width="90" height="42" rx="6" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="200" y="85" font-size="12" fill="var(--ink)" text-anchor="middle">布丁 (2種)</text>
+  <text x="137" y="135" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">選法：3 ＋ 2 ＝ 5 種</text>
+  <text x="137" y="165" font-size="11" fill="var(--muted)" text-anchor="middle">兩群選項互相排斥，二選一</text>
+  <rect x="280" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="402" y="42" font-size="14" font-weight="bold" fill="#10b981" text-anchor="middle">【乘法原理】分步驟搭配</text>
+  <rect x="300" y="60" width="90" height="42" rx="6" fill="#10b98120" stroke="#10b981" stroke-width="1.2"/>
+  <text x="345" y="85" font-size="12" fill="var(--ink)" text-anchor="middle">飲料 (2種)</text>
+  <text x="402" y="85" font-size="15" font-weight="bold" fill="#10b981" text-anchor="middle">配</text>
+  <rect x="420" y="60" width="90" height="42" rx="6" fill="#10b98120" stroke="#10b981" stroke-width="1.2"/>
+  <text x="465" y="85" font-size="12" fill="var(--ink)" text-anchor="middle">點心 (3種)</text>
+  <text x="402" y="135" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">套餐：2 × 3 ＝ 6 種</text>
+  <text x="402" y="165" font-size="11" fill="var(--muted)" text-anchor="middle">每種飲料都能配點心，步驟相乘</text>
+</svg>
+<p class="figure-caption">圖解：單選做決定用「加法」；分步驟組合搭配用「乘法」。</p>
+</div>
+
 店長接著說：「也可以買套餐，選一份飯糰，再配一杯飲料。」飲料有牛奶和豆漿兩種。
 
 這次選了飯糰還沒結束，必須接著選飲料。因此每種飯糰有兩種搭配，合計 3×2＝6 種套餐。

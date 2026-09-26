@@ -38,6 +38,34 @@ description: "分清楚「而且」「或者」「不是」，讀懂闖關條件
 
 ## 或者：至少有一邊成立
 
+
+<div class="concept-figure" aria-label="圖解：「而且」需要雙重條件同時成立；「或者」只要任一條件成立即能通過。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="137" y="42" font-size="14" font-weight="bold" fill="var(--brand)" text-anchor="middle">【而且 (AND)】串聯關卡</text>
+  <line x1="35" y1="100" x2="65" y2="100" stroke="var(--brand)" stroke-width="3"/>
+  <rect x="65" y="78" width="60" height="44" rx="8" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.8"/>
+  <text x="95" y="105" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">帶筆</text>
+  <line x1="125" y1="100" x2="145" y2="100" stroke="var(--brand)" stroke-width="3"/>
+  <rect x="145" y="78" width="60" height="44" rx="8" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.8"/>
+  <text x="175" y="105" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">帶尺</text>
+  <line x1="205" y1="100" x2="235" y2="100" stroke="var(--brand)" stroke-width="3"/>
+  <text x="137" y="160" font-size="12" fill="var(--muted)" text-anchor="middle">兩道門都開啟 ➔ 才能通行</text>
+  <rect x="280" y="15" width="245" height="180" rx="12" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="402" y="42" font-size="14" font-weight="bold" fill="#f59e0b" text-anchor="middle">【或者 (OR)】並聯通道</text>
+  <path d="M300 100 L325 70 L350 70" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <path d="M300 100 L325 130 L350 130" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <rect x="350" y="50" width="75" height="40" rx="8" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.8"/>
+  <text x="387" y="75" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">戴帽子</text>
+  <rect x="350" y="110" width="75" height="40" rx="8" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.8"/>
+  <text x="387" y="135" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">帶雨傘</text>
+  <path d="M425 70 L450 70 L475 100 L500 100" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <path d="M425 130 L450 130 L475 100" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+  <text x="402" y="180" font-size="12" fill="var(--muted)" text-anchor="middle">任選一條路走通 ➔ 即可通過</text>
+</svg>
+<p class="figure-caption">圖解：「而且」需要雙重條件同時成立；「或者」只要任一條件成立即能通過。</p>
+</div>
+
 第二間只要有其中一樣就能進。因此，小米和阿樂都能進，小禾不能進。
 
 那小安呢？他兩樣都帶，會不會反而不符合？

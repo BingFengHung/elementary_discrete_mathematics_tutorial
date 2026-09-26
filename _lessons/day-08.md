@@ -43,6 +43,54 @@ description: "用表格列出搭配，再理解為什麼可以用乘法。"
 
 ## 乘法數的是搭配，不是物品
 
+
+<div class="concept-figure" aria-label="圖解：乘法原理 — 第一步選上衣（3種），每件上衣都能搭配 2 條褲子，總共產生 3 × 2 ＝ 6 種穿搭。">
+<svg viewBox="0 0 540 220" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="10" width="510" height="200" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="80" y="35" font-size="13" font-weight="bold" fill="var(--brand)" text-anchor="middle">第一步：3 件上衣</text>
+  <text x="260" y="35" font-size="13" font-weight="bold" fill="var(--brand)" text-anchor="middle">第二步：2 條褲子</text>
+  <text x="440" y="35" font-size="13" font-weight="bold" fill="var(--brand)" text-anchor="middle">搭配成果（6種）</text>
+  <g transform="translate(40, 50)">
+    <rect x="0" y="0" width="75" height="34" rx="6" fill="#ef444420" stroke="#ef4444" stroke-width="1.5"/>
+    <text x="37" y="22" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">紅上衣</text>
+    <line x1="75" y1="17" x2="200" y2="7" stroke="var(--line)" stroke-width="1.5"/>
+    <line x1="75" y1="17" x2="200" y2="35" stroke="var(--line)" stroke-width="1.5"/>
+    <rect x="0" y="55" width="75" height="34" rx="6" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="37" y="77" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">藍上衣</text>
+    <line x1="75" y1="72" x2="200" y2="62" stroke="var(--line)" stroke-width="1.5"/>
+    <line x1="75" y1="72" x2="200" y2="90" stroke="var(--line)" stroke-width="1.5"/>
+    <rect x="0" y="110" width="75" height="34" rx="6" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="37" y="132" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">黃上衣</text>
+    <line x1="75" y1="127" x2="200" y2="117" stroke="var(--line)" stroke-width="1.5"/>
+    <line x1="75" y1="127" x2="200" y2="145" stroke="var(--line)" stroke-width="1.5"/>
+  </g>
+  <g transform="translate(240, 40)">
+    <rect x="0" y="0" width="65" height="24" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <text x="32" y="16" font-size="11" fill="var(--ink)" text-anchor="middle">長褲</text>
+    <rect x="0" y="28" width="65" height="24" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <text x="32" y="44" font-size="11" fill="var(--ink)" text-anchor="middle">短褲</text>
+    <rect x="0" y="55" width="65" height="24" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <text x="32" y="71" font-size="11" fill="var(--ink)" text-anchor="middle">長褲</text>
+    <rect x="0" y="83" width="65" height="24" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <text x="32" y="99" font-size="11" fill="var(--ink)" text-anchor="middle">短褲</text>
+    <rect x="0" y="110" width="65" height="24" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <text x="32" y="126" font-size="11" fill="var(--ink)" text-anchor="middle">長褲</text>
+    <rect x="0" y="138" width="65" height="24" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <text x="32" y="154" font-size="11" fill="var(--ink)" text-anchor="middle">短褲</text>
+  </g>
+  <g transform="translate(390, 42)">
+    <text x="0" y="15" font-size="11" fill="var(--muted)">➔ 紅衣＋長褲</text>
+    <text x="0" y="43" font-size="11" fill="var(--muted)">➔ 紅衣＋短褲</text>
+    <text x="0" y="70" font-size="11" fill="var(--muted)">➔ 藍衣＋長褲</text>
+    <text x="0" y="98" font-size="11" fill="var(--muted)">➔ 藍衣＋短褲</text>
+    <text x="0" y="125" font-size="11" fill="var(--muted)">➔ 黃衣＋長褲</text>
+    <text x="0" y="153" font-size="11" fill="var(--muted)">➔ 黃衣＋短褲</text>
+  </g>
+  <text x="270" y="200" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">算式：3（件上衣） × 2（條褲子） ＝ 6 種穿搭組合</text>
+</svg>
+<p class="figure-caption">圖解：乘法原理 — 第一步選上衣（3種），每件上衣都能搭配 2 條褲子，總共產生 3 × 2 ＝ 6 種穿搭。</p>
+</div>
+
 3＋2＝5 這個算式沒有算錯，只是它回答的是「有幾件衣服」，不是「有幾種搭配」。
 
 同樣的數字，問題不同，運算也可能不同。看到題目裡有三個和兩個，不能只憑感覺選加法或乘法，要先問：「我現在究竟在數什麼？」

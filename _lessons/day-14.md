@@ -21,6 +21,38 @@ description: "根據問題選擇加法、乘法、排列或組合，並寫出理
 
 ## 第一關：單點或套餐
 
+
+<div class="concept-figure" aria-label="圖解：第二週計數神器全景 — 分步相乘、互斥相加、去重相除與抽屜原理。">
+<svg viewBox="0 0 540 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="170" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <g transform="translate(30, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#3b82f615" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="52" y="28" font-size="12" font-weight="bold" fill="#3b82f6" text-anchor="middle">加乘分流</text>
+    <text x="52" y="65" font-size="20" font-weight="bold" fill="var(--ink)" text-anchor="middle">＋ / ×</text>
+    <text x="52" y="100" font-size="11" fill="var(--muted)" text-anchor="middle">單選或搭配</text>
+  </g>
+  <g transform="translate(155, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#10b98115" stroke="#10b981" stroke-width="1.5"/>
+    <text x="52" y="28" font-size="12" font-weight="bold" fill="#10b981" text-anchor="middle">排列排隊</text>
+    <text x="52" y="65" font-size="14" font-weight="bold" fill="var(--ink)" text-anchor="middle">3 × 2 × 1</text>
+    <text x="52" y="100" font-size="11" fill="var(--muted)" text-anchor="middle">順序遞減</text>
+  </g>
+  <g transform="translate(280, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#f59e0b15" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="52" y="28" font-size="12" font-weight="bold" fill="#f59e0b" text-anchor="middle">組隊去重</text>
+    <text x="52" y="65" font-size="18" font-weight="bold" fill="var(--ink)" text-anchor="middle">÷ 2</text>
+    <text x="52" y="100" font-size="11" fill="var(--muted)" text-anchor="middle">不計前後順序</text>
+  </g>
+  <g transform="translate(405, 30)">
+    <rect x="0" y="0" width="105" height="120" rx="10" fill="#8b5cf615" stroke="#8b5cf6" stroke-width="1.5"/>
+    <text x="52" y="28" font-size="12" font-weight="bold" fill="#8b5cf6" text-anchor="middle">鴿籠保證</text>
+    <text x="52" y="65" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">物 &gt; 巢</text>
+    <text x="52" y="100" font-size="11" fill="var(--muted)" text-anchor="middle">必有重複同選</text>
+  </g>
+</svg>
+<p class="figure-caption">圖解：第二週計數神器全景 — 分步相乘、互斥相加、去重相除與抽屜原理。</p>
+</div>
+
 如果客人只買一份主食，有三種選法。若客人可以從全部主食和飲料中只選一樣商品，則有 3＋2＝5 種。
 
 若客人買套餐，每次必須選一份主食加一杯飲料，就有 3×2＝6 種。請畫出三列兩欄的表格，確認每一格都是一份完整套餐。

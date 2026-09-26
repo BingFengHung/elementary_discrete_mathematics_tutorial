@@ -21,6 +21,30 @@ description: "用樹狀圖記錄每一步選擇，讀出完整結果。"
 
 ## 從一個起點長出樹枝
 
+
+<div class="concept-figure" aria-label="圖解：樹狀圖從起點往右展開，一步一步記錄所有可能，保證不重複、不漏算。">
+<svg viewBox="0 0 540 220" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="10" width="510" height="200" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <circle cx="55" cy="105" r="22" fill="var(--soft)" stroke="var(--brand)" stroke-width="2"/>
+  <text x="55" y="110" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">起點</text>
+  <line x1="77" y1="105" x2="160" y2="60" stroke="var(--brand)" stroke-width="2"/>
+  <line x1="77" y1="105" x2="160" y2="150" stroke="var(--brand)" stroke-width="2"/>
+  <rect x="160" y="42" width="75" height="36" rx="6" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="197" y="65" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">漢堡</text>
+  <rect x="160" y="132" width="75" height="36" rx="6" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="197" y="155" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">三明治</text>
+  <line x1="235" y1="60" x2="315" y2="35" stroke="var(--line)" stroke-width="1.5"/>
+  <line x1="235" y1="60" x2="315" y2="85" stroke="var(--line)" stroke-width="1.5"/>
+  <line x1="235" y1="150" x2="315" y2="125" stroke="var(--line)" stroke-width="1.5"/>
+  <line x1="235" y1="150" x2="315" y2="175" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="340" y="40" font-size="11" fill="var(--muted)">紅茶 ➔ 漢堡＋紅茶</text>
+  <text x="340" y="90" font-size="11" fill="var(--muted)">果汁 ➔ 漢堡＋果汁</text>
+  <text x="340" y="130" font-size="11" fill="var(--muted)">紅茶 ➔ 三明治＋紅茶</text>
+  <text x="340" y="180" font-size="11" fill="var(--muted)">果汁 ➔ 三明治＋果汁</text>
+</svg>
+<p class="figure-caption">圖解：樹狀圖從起點往右展開，一步一步記錄所有可能，保證不重複、不漏算。</p>
+</div>
+
 先畫一個點，寫上「開始」。第一步選主食，所以向外畫兩條線，一條到吐司，一條到飯糰。
 
 接著，吐司旁邊畫出牛奶和豆漿兩個分支；飯糰旁邊也各畫牛奶和豆漿。用文字表示如下：

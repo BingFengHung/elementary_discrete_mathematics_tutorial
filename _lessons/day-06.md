@@ -25,6 +25,30 @@ description: "找到重複單位，依照明確規則預測，並知道猜測可
 
 ## 找到最小的重複小隊
 
+
+<div class="concept-figure" aria-label="圖解：找出規律的核心是圈出「最小重複循環」，用除法餘數就能算出遠處位置的圖案。">
+<svg viewBox="0 0 540 200" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="170" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <rect x="35" y="35" width="170" height="85" rx="10" fill="#3b82f615" stroke="var(--brand)" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="120" y="28" font-size="12" font-weight="bold" fill="var(--brand)" text-anchor="middle">最小重複循環單元（長度 3）</text>
+  <circle cx="65" cy="78" r="18" fill="#ef4444"/>
+  <text x="65" y="83" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">紅圓</text>
+  <rect x="105" y="60" width="36" height="36" rx="6" fill="#3b82f6"/>
+  <text x="123" y="83" font-size="11" font-weight="bold" fill="#fff" text-anchor="middle">藍方</text>
+  <polygon points="175,60 186,82 164,82" fill="#f59e0b"/>
+  <text x="175" y="103" font-size="11" fill="var(--muted)" text-anchor="middle">黃三</text>
+  <text x="220" y="85" font-size="20" fill="var(--muted)">➔</text>
+  <circle cx="265" cy="78" r="18" fill="#ef4444"/>
+  <rect x="305" y="60" width="36" height="36" rx="6" fill="#3b82f6"/>
+  <polygon points="375,60 386,82 364,82" fill="#f59e0b"/>
+  <text x="420" y="85" font-size="20" fill="var(--muted)">➔</text>
+  <circle cx="465" cy="78" r="20" fill="var(--soft)" stroke="var(--brand)" stroke-width="2" stroke-dasharray="4 2"/>
+  <text x="465" y="84" font-size="15" font-weight="bold" fill="var(--brand)" text-anchor="middle">？</text>
+  <text x="270" y="155" font-size="13" font-weight="bold" fill="var(--ink)" text-anchor="middle">算第 7 個：7 ÷ 3 ＝ 2 餘 1 ➔ 對應到循環的第 1 個【紅圓】！</text>
+</svg>
+<p class="figure-caption">圖解：找出規律的核心是圈出「最小重複循環」，用除法餘數就能算出遠處位置的圖案。</p>
+</div>
+
 看第一條手環：
 
 紅藍｜紅藍｜紅藍｜……

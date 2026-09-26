@@ -36,6 +36,33 @@ description: "用重疊的圈圈整理兩種條件，避免把同一個人算兩
 
 ## 讓圈圈重疊，就有地方了
 
+
+<div class="concept-figure" aria-label="圖解：文氏圖（Venn Diagram）— 小米與小宇同時屬於兩個集合，站在中間重疊的交集裡。">
+<svg viewBox="0 0 540 230" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="10" y="10" width="520" height="210" rx="16" fill="var(--surface)" stroke="var(--line)" stroke-width="2"/>
+  <text x="30" y="36" font-size="13" font-weight="bold" fill="var(--muted)">調查全體 8 位同學範圍</text>
+  <circle cx="210" cy="125" r="82" fill="#3b82f620" stroke="#3b82f6" stroke-width="2"/>
+  <circle cx="330" cy="125" r="82" fill="#10b98120" stroke="#10b981" stroke-width="2"/>
+  <text x="170" y="65" font-size="14" font-weight="bold" fill="#3b82f6">喜歡貓 (5人)</text>
+  <text x="370" y="65" font-size="14" font-weight="bold" fill="#10b981">喜歡狗 (4人)</text>
+  <text x="170" y="105" font-size="12" fill="var(--ink)" text-anchor="middle">小安</text>
+  <text x="170" y="128" font-size="12" fill="var(--ink)" text-anchor="middle">小晴</text>
+  <text x="170" y="151" font-size="12" fill="var(--ink)" text-anchor="middle">小文</text>
+  <text x="170" y="180" font-size="11" fill="var(--muted)" text-anchor="middle">(獨享 3 人)</text>
+  <rect x="245" y="90" width="50" height="66" rx="8" fill="var(--surface)" stroke="var(--brand)" stroke-width="1.5"/>
+  <text x="270" y="112" font-size="12" font-weight="bold" fill="var(--brand)" text-anchor="middle">小米</text>
+  <text x="270" y="132" font-size="12" font-weight="bold" fill="var(--brand)" text-anchor="middle">小宇</text>
+  <text x="270" y="148" font-size="10" fill="var(--muted)" text-anchor="middle">交集 2人</text>
+  <text x="370" y="115" font-size="12" fill="var(--ink)" text-anchor="middle">阿樂</text>
+  <text x="370" y="138" font-size="12" fill="var(--ink)" text-anchor="middle">小青</text>
+  <text x="370" y="180" font-size="11" fill="var(--muted)" text-anchor="middle">(獨享 2 人)</text>
+  <rect x="445" y="150" width="70" height="34" rx="6" fill="var(--surface)" stroke="var(--line)" stroke-width="1.2"/>
+  <text x="480" y="172" font-size="11" fill="var(--muted)" text-anchor="middle">小禾 (1人)</text>
+  <text x="270" y="210" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">3 ＋ 2 ＋ 2 ＋ 1 ＝ 8 人</text>
+</svg>
+<p class="figure-caption">圖解：文氏圖（Venn Diagram）— 小米與小宇同時屬於兩個集合，站在中間重疊的交集裡。</p>
+</div>
+
 在紙上畫一個大長方形，代表這次調查的八位同學。裡面畫兩個互相重疊的圈圈，左邊標上「喜歡貓」，右邊標上「喜歡狗」。
 
 重疊的地方同時在兩個圈圈裡。因此，小米和小宇放在中間，就能表示他們兩種都喜歡，而不必多做一張名字卡。

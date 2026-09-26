@@ -47,6 +47,34 @@ description: "用有順序的範圍縮小答案，理解二分搜尋。"
 
 ## 這叫二分搜尋
 
+
+<div class="concept-figure" aria-label="圖解：二分搜尋法每次直接砍半可能範圍，32 ➔ 16 ➔ 8 ➔ 4 ➔ 2 ➔ 1，最多只要 5 次必能破案！">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <g transform="translate(45, 45)">
+    <text x="0" y="18" font-size="12" font-weight="bold" fill="var(--brand)">第 1 次</text>
+    <rect x="65" y="4" width="370" height="20" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <rect x="65" y="4" width="185" height="20" rx="4" fill="#ef444430"/>
+    <text x="157" y="18" font-size="10" fill="#ef4444" text-anchor="middle">猜 16 太小 ➔ 排除 1~16</text>
+    <text x="342" y="18" font-size="10" font-weight="bold" fill="var(--ink)" text-anchor="middle">剩 17 ~ 32 (16個)</text>
+  </g>
+  <g transform="translate(45, 80)">
+    <text x="0" y="18" font-size="12" font-weight="bold" fill="var(--brand)">第 2 次</text>
+    <rect x="65" y="4" width="370" height="20" rx="4" fill="var(--soft)" stroke="var(--line)"/>
+    <rect x="250" y="4" width="185" height="20" rx="4" fill="#ef444430"/>
+    <text x="342" y="18" font-size="10" fill="#ef4444" text-anchor="middle">猜 24 太大 ➔ 排除 24~32</text>
+    <text x="157" y="18" font-size="10" font-weight="bold" fill="var(--ink)" text-anchor="middle">剩 17 ~ 23 (7個)</text>
+  </g>
+  <g transform="translate(45, 115)">
+    <text x="0" y="18" font-size="12" font-weight="bold" fill="var(--brand)">後續</text>
+    <text x="65" y="18" font-size="12" fill="var(--ink)">再切兩刀 ➔ 鎖定 23！最多只需 5 次問答！</text>
+    <text x="380" y="18" font-size="14" font-weight="bold" fill="#10b981">🎯 猜中目標！</text>
+  </g>
+  <text x="270" y="175" font-size="12" fill="var(--muted)" text-anchor="middle">每次提問排除 50% 範圍，就像切蛋糕一樣迅速縮小包圍網。</text>
+</svg>
+<p class="figure-caption">圖解：二分搜尋法每次直接砍半可能範圍，32 ➔ 16 ➔ 8 ➔ 4 ➔ 2 ➔ 1，最多只要 5 次必能破案！</p>
+</div>
+
 把有順序的候選範圍分成兩部分，每次依回答留下其中一部分，這類方法叫作**二分搜尋**。
 
 今天我們盡量平均分，讓兩種回答都有效率。如果剩下的數量是奇數，不一定能完全一樣多，可以分成差一個的兩群。

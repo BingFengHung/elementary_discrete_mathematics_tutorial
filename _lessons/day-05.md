@@ -35,6 +35,29 @@ description: "讀懂「如果……就……」，不把規則的方向倒過來
 
 ## 四種情況，哪一種真的違約？
 
+
+<div class="concept-figure" aria-label="圖解：條件推論方向性 — 只有在承諾條件發生卻未履行時違約；沒下雨時帶不帶傘都不算違規。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="10" width="510" height="190" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="270" y="35" font-size="14" font-weight="bold" fill="var(--brand)" text-anchor="middle">約定：「如果下雨，我就帶傘」的檢驗矩陣</text>
+  <g transform="translate(45, 55)">
+    <rect x="0" y="0" width="215" height="58" rx="8" fill="#10b98115" stroke="#10b981" stroke-width="1.5"/>
+    <text x="15" y="26" font-size="13" font-weight="bold" fill="var(--ink)">有下雨 ＋ 有帶傘</text>
+    <text x="15" y="46" font-size="11" fill="#10b981">✓ 符合承諾（守約）</text>
+    <rect x="235" y="0" width="215" height="58" rx="8" fill="#ef444415" stroke="#ef4444" stroke-width="2"/>
+    <text x="250" y="26" font-size="13" font-weight="bold" fill="var(--ink)">有下雨 ＋ 沒帶傘</text>
+    <text x="250" y="46" font-size="11" font-weight="bold" fill="#ef4444">✕ 違背約定！（唯一說謊情況）</text>
+    <rect x="0" y="72" width="215" height="58" rx="8" fill="var(--soft)" stroke="var(--line)" stroke-width="1"/>
+    <text x="15" y="98" font-size="13" font-weight="bold" fill="var(--ink)">沒下雨 ＋ 有帶傘</text>
+    <text x="15" y="118" font-size="11" fill="var(--muted)">✓ 預防萬一（沒有違約）</text>
+    <rect x="235" y="72" width="215" height="58" rx="8" fill="var(--soft)" stroke="var(--line)" stroke-width="1"/>
+    <text x="250" y="98" font-size="13" font-weight="bold" fill="var(--ink)">沒下雨 ＋ 沒帶傘</text>
+    <text x="250" y="118" font-size="11" fill="var(--muted)">✓ 本來就沒說沒雨要怎樣（合約成立）</text>
+  </g>
+</svg>
+<p class="figure-caption">圖解：條件推論方向性 — 只有在承諾條件發生卻未履行時違約；沒下雨時帶不帶傘都不算違規。</p>
+</div>
+
 我們只檢查這條約定，不加入其他規定。
 
 | 天氣 | 小安的行動 | 是否違反「下雨就帶傘」？ |

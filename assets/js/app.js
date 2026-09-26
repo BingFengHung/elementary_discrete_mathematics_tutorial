@@ -70,7 +70,7 @@
   byId('font-larger')?.addEventListener('click', () => { font = Math.min(24, font + 2); setFont(); save('font', font); });
   let theme = read('theme', null);
   if (!['dark', 'light'].includes(theme)) theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  const applyTheme = () => { document.documentElement.dataset.theme = theme; const toggle = byId('theme-toggle'); if (toggle) { toggle.hidden = false; toggle.textContent = theme === 'dark' ? '淺色' : '深色'; toggle.setAttribute('aria-label', '切換' + (theme === 'dark' ? '淺色' : '深色') + '模式'); } };
+  const applyTheme = () => { document.documentElement.dataset.theme = theme; const metaTheme = document.querySelector('meta[name="theme-color"]'); if (metaTheme) metaTheme.setAttribute('content', theme === 'dark' ? '#0b1326' : '#176b5b'); const toggle = byId('theme-toggle'); if (toggle) { toggle.hidden = false; toggle.textContent = theme === 'dark' ? '淺色' : '深色'; toggle.setAttribute('aria-label', '切換' + (theme === 'dark' ? '淺色' : '深色') + '模式'); } };
   applyTheme();
   byId('theme-toggle')?.addEventListener('click', () => { theme = theme === 'dark' ? 'light' : 'dark'; applyTheme(); save('theme', theme); });
   let installPrompt;

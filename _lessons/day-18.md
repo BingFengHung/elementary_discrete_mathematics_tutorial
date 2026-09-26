@@ -48,6 +48,28 @@ description: "把想法寫成清楚步驟，實際執行並修正錯誤。"
 
 ## 這樣的步驟叫演算法
 
+
+<div class="concept-figure" aria-label="圖解：演算法流程圖 — 具備起點、明確操作步驟、條件判斷與結束目標。">
+<svg viewBox="0 0 540 210" width="100%" xmlns="http://www.w3.org/2000/svg">
+  <rect x="15" y="15" width="510" height="180" rx="14" fill="var(--surface)" stroke="var(--line)" stroke-width="1.5"/>
+  <rect x="35" y="80" width="70" height="38" rx="19" fill="var(--soft)" stroke="var(--line)" stroke-width="1.5"/>
+  <text x="70" y="104" font-size="12" font-weight="bold" fill="var(--ink)" text-anchor="middle">開始</text>
+  <line x1="105" y1="99" x2="140" y2="99" stroke="var(--brand)" stroke-width="2"/>
+  <rect x="140" y="78" width="90" height="42" rx="6" fill="#3b82f620" stroke="#3b82f6" stroke-width="1.5"/>
+  <text x="185" y="104" font-size="12" fill="var(--ink)" text-anchor="middle">向前走 1 格</text>
+  <line x1="230" y1="99" x2="270" y2="99" stroke="var(--brand)" stroke-width="2"/>
+  <polygon points="310,72 350,99 310,126 270,99" fill="#f59e0b20" stroke="#f59e0b" stroke-width="1.8"/>
+  <text x="310" y="103" font-size="11" font-weight="bold" fill="var(--ink)" text-anchor="middle">有障礙？</text>
+  <line x1="350" y1="99" x2="420" y2="99" stroke="var(--brand)" stroke-width="2"/>
+  <text x="375" y="90" font-size="10" fill="var(--muted)">否</text>
+  <path d="M310 126 L310 160 L185 160 L185 120" fill="none" stroke="#ef4444" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <text x="245" y="154" font-size="10" fill="#ef4444">是，向右轉</text>
+  <rect x="420" y="80" width="85" height="38" rx="19" fill="#10b98120" stroke="#10b981" stroke-width="2"/>
+  <text x="462" y="104" font-size="12" font-weight="bold" fill="#10b981" text-anchor="middle">抵達寶箱！</text>
+</svg>
+<p class="figure-caption">圖解：演算法流程圖 — 具備起點、明確操作步驟、條件判斷與結束目標。</p>
+</div>
+
 為了完成某項任務，設計一套清楚、可執行的步驟，就是在設計**演算法**。
 
 演算法不只出現在電腦。你整理卡片時，先按顏色分堆，再按號碼排序；或昨天找路時，列出路線、計算總長、比較大小，也是在有步驟地處理問題。
