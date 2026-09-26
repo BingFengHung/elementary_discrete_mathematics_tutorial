@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{% assign lessons = site.lessons | sort: 'day' %}
+{% assign before = page.day | minus: 1 %}
+{% assign after = page.day | plus: 1 %}
+<div class="reading-shell">
+  <aside class="lesson-sidebar" aria-label="課程章節"><a class="back-link" href="{{ '/' | relative_url }}#curriculum">← 返回課程目錄</a><p class="eyebrow">你的 21 天探險</p><ol>{% for lesson in lessons %}<li><a href="{{ lesson.url | relative_url }}" {% if lesson.day == page.day %}aria-current="page"{% endif %} data-lesson-link="{{ lesson.day }}"><span class="day-small">{{ lesson.day }}</span><span>{{ lesson.title | split: '：' | first }}</span></a></li>{% endfor %}</ol></aside>
+  <div class="reading-main">
+    <header class="lesson-header"><p class="eyebrow">第 {{ page.week }} 週 · DAY {{ page.day }} / 21</p><h1>{{ page.title | escape }}</h1><p class="lesson-deck">{{ page.description | escape }}</p><div class="reading-tools" hidden><span>閱讀字級</span><button type="button" id="font-smaller" aria-label="縮小文章字級">A−</button><button type="button" id="font-larger" aria-label="放大文章字級">A＋</button><span class="reading-time">閱讀＋活動，約 25 分鐘</span></div></header>
+    <details class="page-toc" id="page-toc" hidden><summary>這一篇的閱讀路線</summary><ol id="toc-links"></ol></details>
+    <article class="prose" id="lesson-content">{{ content }}</article>
+    <section class="completion" hidden><div><strong>今天也多學了一點！</strong><p>做完活動、想過理由後，替自己做個記號。</p></div><button type="button" id="complete-lesson" aria-pressed="false">標記本篇已完成</button><p id="completion-status" role="status"></p></section>
+    <nav class="lesson-pagination" aria-label="章節切換">{% for lesson in lessons %}{% if lesson.day == before %}<a rel="prev" href="{{ lesson.url | relative_url }}"><small>← 上一篇 · DAY {{ lesson.day }}</small><span>{{ lesson.title | escape }}</span></a>{% endif %}{% if lesson.day == after %}<a rel="next" href="{{ lesson.url | relative_url }}"><small>下一篇 · DAY {{ lesson.day }} →</small><span>{{ lesson.title | escape }}</span></a>{% endif %}{% endfor %}{% if page.day == 21 %}<a href="{{ '/' | relative_url }}#curriculum"><small>完成探險 →</small><span>回顧全部 21 天</span></a>{% endif %}</nav>
+  </div>
+</div>

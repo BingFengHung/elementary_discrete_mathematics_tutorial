@@ -1,0 +1,32 @@
+title: "21 天離散數學探險"
+description: "給國小生的數學偵探手冊：從分類玩具到破解迷宮，每天一個故事、一個活動，練習把想法說清楚。"
+lang: zh-Hant-TW
+url: "https://bingfenghung.github.io"
+baseurl: "/elementary_discrete_mathematics_tutorial"
+timezone: Asia/Taipei
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+collections:
+  lessons:
+    output: true
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
+  - scripts
+  - tests
+  - docs
+  - vendor
+  - .jekyll-cache
+  - .bundle
+  - '*.log'
