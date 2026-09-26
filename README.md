@@ -89,3 +89,7 @@
 - [GitHub Pages 自訂工作流程](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 - [PWA manifest](https://web.dev/learn/pwa/web-app-manifest)
 - [PWA 安裝](https://web.dev/learn/pwa/installation)
+
+## 瀏覽器驗證
+
+GitHub Actions 會啟動真正的 Chromium，以 1365 px 桌面與 390 px 手機寬度檢查版面、解答展開、進度保存、字級與主題保存，並在離線狀態開啟尚未讀過的第 21 篇。另檢查停用 JavaScript 時仍可閱讀與展開解答。截圖保存在每次 Actions 執行的 browser-verification artifact。手機原生安裝介面仍需在實際 iPhone／Android 上確認。

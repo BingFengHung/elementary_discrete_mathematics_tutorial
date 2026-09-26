@@ -29,6 +29,19 @@ jobs:
           destination: ./_site
       - name: Verify generated site and project paths
         run: node scripts/check-site.mjs
+      - name: Install browser test dependencies
+        run: npm ci
+      - name: Install Chromium for verification
+        run: npx playwright-core install --with-deps chromium
+      - name: Verify desktop, mobile and offline reading
+        run: node scripts/check-browser.mjs
+      - name: Save verification screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-verification
+          path: test-artifacts
+          if-no-files-found: ignore
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:

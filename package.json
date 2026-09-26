@@ -1,0 +1,14 @@
+{
+  "name": "elementary-discrete-mathematics-tutorial",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test:source": "node scripts/check-source.mjs",
+    "test:site": "node scripts/check-site.mjs",
+    "test:browser": "node scripts/check-browser.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.63.0"
+  }
+}
